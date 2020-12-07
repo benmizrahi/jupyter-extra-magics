@@ -54,7 +54,7 @@ optional params:
 
 A magic designed to collect cell execution results and combine notebook results into single EMAIL/SLACK, the magic run immediate and it give us the ability to debug the message while development, each cell output is acceptable as an attachment - Datafream,  Plot, String messages.
 
-Using this magic requires having 4 environment parameters declared in the Jupyter instance created:  
+Using this magic requires having the following environment parameters declared when the Jupyter instance created:  
 
 ```
 
