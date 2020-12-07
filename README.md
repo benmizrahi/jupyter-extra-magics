@@ -57,13 +57,23 @@ A magic designed to collect cell execution results and combine notebook results 
 Using this magic requires having 4 environment parameters declared in the Jupyter instance created:  
 
 ```
+
+IS_BATCH_JOB - If set to true - the magic takes the requied notebook direcly from GitHub, if false the magic uses local filesystem to run the notebook
+
 SLACK_API_TOKEN - sending slack notification using slack sdks for python.read more about the web-token inside slack repo link: (https://github.com/slackapi/python-slack-sdk)   
 
 EMAIL_USER - username for smtp connection to send email.   
 
 EMAIL_PASS - password for smtp connection to send email.   
 
-ENV- current running environment (INT/PROD/INTERACTIVE)
+ENV - current running environment (INT/PROD/INTERACTIVE).
+
+GIT_REPO - a git base repository to take the notebooks from.
+
+GITHUB - a GitHub repository to take the notebooks from.
+
+GIT_TOKEN - Token to access the git repo in raw mode.
+
 ```
 
 ####  Declaration:
