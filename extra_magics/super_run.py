@@ -63,7 +63,10 @@ class SuperRun(Magics):
         if isinstance(get_ipython().kernel,SparkKernelBase) == True:
             res = kernel.do_execute(source,True)
         else:
+            holder = kernel.shell.should_run_async
+            kernel.shell.should_run_async = make_runnning_sync
             res = kernel.do_execute(source,True).result()
+            kernel.shell.should_run_async = holder
         if res['status'] != 'ok' :
             return False
         else:
