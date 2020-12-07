@@ -28,8 +28,6 @@ c.InteractiveShellApp.extensions = ['extra_magics']
 
 Once you configure that, the extra magics are ready to use inside Jupyter instance.
 
-# Declarations: 
-
 ## Estimate Magic:  
 
 An estimation magic for BQ, this magic can give you the estimated cost & scan of a query usage and parameters:
