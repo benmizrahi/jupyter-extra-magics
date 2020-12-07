@@ -1,0 +1,7 @@
+pandas
+sparkmagic
+slackclient
+ipython
+google-cloud-bigquery
+pytest-mock
+pytest
