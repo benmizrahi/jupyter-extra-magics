@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="jupyter_extra_magics",
-    version="1.0.2",
+    version="1.0.4",
     description="A Jupyter magics and tools to extend Jupyter env",
     long_description=README,
     long_description_content_type="text/markdown",
