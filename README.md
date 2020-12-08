@@ -60,6 +60,9 @@ SLACK_API_TOKEN - sending slack notification using slack sdks for python.rea
 EMAIL_USER - username for smtp connection to send email.
 EMAIL_PASS - password for smtp connection to send email.
 ENV - current running environment (INT/PROD/INTERACTIVE).
+
+if IS_BATCH_JOB == True (notebooks doesn't exists in the local file system):
+
 GIT_REPO - a git base repository to take the notebooks from.
 GITHUB - a GitHub repository to take the notebooks from.
 GIT_TOKEN - Token to access the git repo in raw mode.
